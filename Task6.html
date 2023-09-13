@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 6</title>
+</head>
+<style>
+    body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.photo{
+    padding: 20px 40%;
+    
+}
+
+input.paa,input.aap{
+    width :30vw ; 
+    height:4vh; 
+    border-color: lightgrey;
+    border-right-color: white;
+}
+
+.account{
+    padding: 25px 31%;
+    
+}
+
+label{
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    
+    width: 50%;
+}
+
+.green{
+    background-color: green;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    width: 462px;
+    border-color: green;
+    height: 4vh;
+    
+}
+
+.check{
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.cancel{
+    background-color: lightgrey;
+    width: 30%;
+    margin-left: 30%;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid gray;
+}
+
+.button{
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 4px;
+    height: 4vh;
+    width: 10vh;
+    border-color: red;
+}
+
+p{
+    float: right;
+    margin-top: 2px;
+}
+</style>
+<body>
+    <div class="photo">
+        <img src="https://sm-medicalesthetics.ch/wp-content/uploads/2021/05/woman-avatar-profile-round-icon_24640-14042-300x300.jpg" alt="account" width="200" height="200">
+    </div>
+    <div>
+        <form class="account">
+    
+            <label for="username" class="maa"><b>Username</b></label>
+            <input type="text" class="paa" placeholder="Enter Username">
+            <br><br>
+            <label for="password" class="aam"><b>Password</b></label>
+            <input type="password" class="aap" placeholder="Enter Password">
+            
+            <input type="button" value="Login" class="green">
+            <br>
+            <input type="checkbox" class="check">Remember me
+            
+        </form>
+    </div>
+    <div class="cancel">
+        <input type="button" value="Cancel" class="button">
+        <p>Forgot <a href="#" class="link">password</a>?</p>
+    </div>
+</body>
+</html>
