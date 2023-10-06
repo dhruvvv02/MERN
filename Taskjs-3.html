@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #no1,#no2{
+            margin: 3px;
+        }
+        #mul:hover,#div:hover{
+            border: 2px solid rgb(21, 156, 210);
+        }
+        .center{
+            position: absolute;
+            border: 2px solid;
+            padding: 10px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+    <script>
+        function multiply(){
+            var no1 = parseFloat(document.getElementById("no1").value);
+            var no2 = parseFloat(document.getElementById("no2").value);
+            var result = no1 * no2;
+            document.getElementById("Result").innerText = "The Result is: " + result;
+        }
+        function division(){
+            var no1 = parseFloat(document.getElementById("no1").value);
+            var no2 = parseFloat(document.getElementById("no2").value);
+            var resultDiv = document.getElementById("Result");
+            if (no2 === 0) {
+                resultDiv.innerText = "Cannot divide by zero.";
+            } else {
+                var result = no1 / no2;
+                resultDiv.innerText = "The Result is: "+ result;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="center">
+        1 st number:
+        <input type="text" id="no1"><br>
+        2nd number:
+        <input type="text" id="no2"><br>
+        <button onclick="multiply()" id="mul">Multiply</button>
+        <button onclick="division()" id="div">Division</button><br><br>
+        <div id="Result"></div>
+    </div>
+</body>
+</html>
